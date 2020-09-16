@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zenjich.github.io</id>
-    <title>ZenJiCh的个人博客</title>
-    <updated>2020-09-16T15:19:39.368Z</updated>
+    <title>ZenJiCh</title>
+    <updated>2020-09-16T15:28:22.364Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zenjich.github.io"/>
     <link rel="self" href="https://zenjich.github.io/atom.xml"/>
-    <subtitle>ZenJiCh</subtitle>
     <logo>https://zenjich.github.io/images/avatar.png</logo>
     <icon>https://zenjich.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, ZenJiCh的个人博客</rights>
+    <rights>All rights reserved 2020, ZenJiCh</rights>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://zenjich.github.io/post/hello-gridea/</id>
