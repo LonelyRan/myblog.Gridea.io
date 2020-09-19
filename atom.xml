@@ -2,13 +2,87 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zenjich.github.io</id>
     <title>ZenJiCh</title>
-    <updated>2020-09-16T16:18:44.913Z</updated>
+    <updated>2020-09-19T13:43:26.072Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zenjich.github.io"/>
     <link rel="self" href="https://zenjich.github.io/atom.xml"/>
     <logo>https://zenjich.github.io/images/avatar.png</logo>
     <icon>https://zenjich.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, ZenJiCh</rights>
+    <entry>
+        <title type="html"><![CDATA[现实与幻想模组开发日记（持续更新）]]></title>
+        <id>https://zenjich.github.io/post/xian-shi-yu-huan-xiang-mo-zu-kai-fa-ri-ji-chi-xu-geng-xin/</id>
+        <link href="https://zenjich.github.io/post/xian-shi-yu-huan-xiang-mo-zu-kai-fa-ri-ji-chi-xu-geng-xin/">
+        </link>
+        <updated>2020-09-19T13:41:37.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="2020531">2020.5.31</h2>
+<h3 id="完成现实与幻想模组需求文档">·完成现实与幻想模组需求文档</h3>
+<h4 id="注仅仅按照百度出来的需求文档模板做的简易版的需求文档并非正规的产品需求文档">注：仅仅按照百度出来的需求文档模板做的简易版的需求文档，并非正规的产品需求文档</h4>
+<h2 id="202064">2020.6.4</h2>
+<h3 id="由于我技术水平有限开发不了创造模式物品栏因此暂停开发创造模式物品栏">·由于我技术水平有限，开发不了创造模式物品栏，因此，暂停开发创造模式物品栏</h3>
+<h2 id="202065">2020.6.5</h2>
+<h3 id="完成砂之星矿石草稿">·完成砂之星矿石草稿</h3>
+<h2 id="202067">2020.6.7</h2>
+<h3 id="完成对japaricraft-mod-1144-020的方块部分的整理并且根据加帕里公园百科兽娘动物园中文维基以及个人实际需要加以修改写入本模组">·完成对Japaricraft Mod 1.14.4-0.2.0的方块部分的整理，并且根据加帕里公园百科，兽娘动物园中文维基以及个人实际需要，加以修改，写入本模组</h3>
+<h2 id="2020615">2020.6.15</h2>
+<h3 id="由于现实与幻想模组需求文档变更删除现实与幻想模组参考资料文件夹中的japaricraftmod-1144-020文件夹与cutemobmodels1144文件夹">·由于现实与幻想模组需求文档变更，删除现实与幻想模组参考资料文件夹中的JapariCraftmod-1.14.4-0.2.0文件夹与Cute+Mob+models+1.14.4文件夹</h3>
+<h3 id="参照lugiagameryt参照yarrmateys制作的原始的minecraft生物娘化模型而移植并制作出来的cute-mob-addon-114-updated模组2的黑猫allblackcat的娘化模型制作了黑猫allblackcat的简易版的娘化模型">·参照LugiaGamerYT参照yarrmateys制作的原始的Minecraft生物娘化模型而移植并制作出来的Cute Mob Addon (1.14) (updated)模组&lt;2&gt;的黑猫（allblackcat）的娘化模型，制作了黑猫（allblackcat）的简易版的娘化模型</h3>
+<h4 id="注1os禁止套娃">（注：&lt;1&gt;OS:禁止套娃！！！</h4>
+<h4 id="2此模组仅适用于minecraft-bedrock-edition我的世界基岩版">&lt;2&gt;此模组仅适用于Minecraft Bedrock Edition（我的世界基岩版））</h4>
+<h2 id="2020617">2020.6.17</h2>
+<h3 id="参照japaricraft-mod-1144-020的砂之星矿方块以及百度出来的回形纹素材图片选择了中国传统颜色-碧青制作了碧青矿石和碧青方块">·参照Japaricraft Mod 1.14.4-0.2.0的砂之星矿方块以及百度出来的回形纹素材图片，选择了中国传统颜色-碧青，制作了碧青矿石和碧青方块</h3>
+<h2 id="2020618">2020.6.18</h2>
+<h3 id="参照minecraft1144原版玻璃方块代码制作了碧青玻璃">·参照Minecraft1.14.4原版玻璃方块代码，制作了碧青玻璃</h3>
+<h3 id="因为碧青方块模型不符合我对方块的定义所以将此模型作为碧青回形纹玻璃模型">·因为碧青方块模型不符合我对方块的定义，所以，将此模型作为碧青回形纹玻璃模型</h3>
+<h2 id="2020621">2020.6.21</h2>
+<h3 id="参照minecraft1144原版斧锄镐锹剑等模型的贴图制作了碧青斧碧青锄碧青镐碧青铲碧青剑等模型的贴图">·参照Minecraft1.14.4原版斧，锄，镐，锹，剑等模型的贴图，制作了碧青斧，碧青锄，碧青镐，碧青铲，碧青剑等模型的贴图</h3>
+<h3 id="基本上完成原始时代创造模式物品栏的开发还没有设计创造模式物品栏图标">·基本上完成原始时代创造模式物品栏的开发（还没有设计创造模式物品栏图标）</h3>
+<h2 id="2020628">2020.6.28</h2>
+<h3 id="设计了现实与幻想模组logo">·设计了现实与幻想模组LOGO</h3>
+<h2 id="202075">2020.7.5</h2>
+<h3 id="设计并添加原始时代创造模式物品栏图标">·设计并添加原始时代创造模式物品栏图标</h3>
+<h3 id="添加现实与幻想模组logo">·添加现实与幻想模组LOGO</h3>
+<h3 id="添加原始时代维度注只能通过指令传送到此维度指令为realityandfantasy-primitivetimes">·添加原始时代维度（注：只能通过指令传送到此维度，指令为/realityandfantasy primitivetimes）</h3>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[现实与幻想模组更新日志（持续更新）]]></title>
+        <id>https://zenjich.github.io/post/xian-shi-yu-huan-xiang-mo-zu-geng-xin-ri-zhi-chi-xu-geng-xin/</id>
+        <link href="https://zenjich.github.io/post/xian-shi-yu-huan-xiang-mo-zu-geng-xin-ri-zhi-chi-xu-geng-xin/">
+        </link>
+        <updated>2020-09-19T13:38:34.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="202065">2020.6.5</h2>
+<h3 id="新增砂之星矿石草稿">新增砂之星矿石草稿</h3>
+<h2 id="202067">2020.6.7</h2>
+<h3 id="新增砂之星矿石">新增砂之星矿石</h3>
+<h3 id="新增砂之星方块">新增砂之星方块</h3>
+<h3 id="新增砂之星灯">新增砂之星灯</h3>
+<h3 id="新增碎裂的砂之星方块">新增碎裂的砂之星方块</h3>
+<h2 id="2020617">2020.6.17</h2>
+<h3 id="新增碧青矿石">新增碧青矿石</h3>
+<h3 id="新增碧青方块">新增碧青方块</h3>
+<h3 id="移除砂之星矿石">移除砂之星矿石</h3>
+<h3 id="移除砂之星方块">移除砂之星方块</h3>
+<h3 id="移除砂之星灯">移除砂之星灯</h3>
+<h3 id="移除碎裂的砂之星方块">移除碎裂的砂之星方块</h3>
+<h2 id="2020618">2020.6.18</h2>
+<h3 id="新增碧青玻璃">新增碧青玻璃</h3>
+<h3 id="新增碧青回形纹玻璃">新增碧青回形纹玻璃</h3>
+<h3 id="新增碧青砖块">新增碧青砖块</h3>
+<h2 id="2020621">2020.6.21</h2>
+<h3 id="新增碧青斧">新增碧青斧</h3>
+<h3 id="新增碧青锄">新增碧青锄</h3>
+<h3 id="新增碧青镐">新增碧青镐</h3>
+<h3 id="新增碧青铲">新增碧青铲</h3>
+<h3 id="新增碧青剑">新增碧青剑</h3>
+<h3 id="新增原始时代创造模式物品栏草稿">新增原始时代创造模式物品栏草稿</h3>
+<h2 id="202074">2020.7.4</h2>
+<h3 id="新增原始时代维度传送指令">新增原始时代维度传送指令</h3>
+<h2 id="202075">2020.7.5</h2>
+<h3 id="添加原始时代创造模式物品栏logo">添加原始时代创造模式物品栏LOGO</h3>
+<h3 id="新增原始时代维度草稿">新增原始时代维度草稿</h3>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://zenjich.github.io/post/hello-gridea/</id>
