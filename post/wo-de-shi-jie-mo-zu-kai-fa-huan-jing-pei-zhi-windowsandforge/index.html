@@ -1,0 +1,320 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>我的世界模组开发环境配置（Windows&amp;Forge） | ZenJiCh</title>
+
+<link rel="shortcut icon" href="https://zenjich.github.io/favicon.ico?v=1611592787295">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://zenjich.github.io/styles/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script>
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            ZenJiCh
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+                <div class="nav-item">
+                    
+                        <a href="/" class="menu gt-a-link">
+                            首页
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/archives" class="menu gt-a-link">
+                            归档
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/tags" class="menu gt-a-link">
+                            标签
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/post/about" class="menu gt-a-link">
+                            关于
+                        </a>
+                    
+                </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1611592787295" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    我的世界模组开发环境配置（Windows&amp;Forge）
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2021-01-26 ·
+                    </time>
+                    
+                </div>
+                <div class="post-content">
+                    <h2 id="0项目前因">0.项目前因</h2>
+<h3 id="俗话说自己动手丰衣足食-为了满足自己对模组的需求自行开发属于自己的模组那么首先我们需要进行我的世界模组开发环境配置">俗话说，自己动手，丰衣足食。为了满足自己对模组的需求，自行开发属于自己的模组，那么，首先，我们需要进行我的世界模组开发环境配置。</h3>
+<h2 id="1项目简介">1.项目简介</h2>
+<h3 id="注此教程仅适用于我的世界java版本minecraft-java-edition">（注：此教程仅适用于我的世界Java版本：Minecraft Java Edition）</h3>
+<h3 id="在安装了java开发包ide模组依赖接口之后配置相关配置文件配置我的世界模组开发环境">在安装了Java开发包，IDE，模组依赖接口之后，配置相关配置文件，配置我的世界模组开发环境</h3>
+<h2 id="2软件以及硬件相关准备请按照你的实际情况和需要来选择">2.软件以及硬件相关准备（请按照你的实际情况和需要来选择）</h2>
+<h3 id="一台安装了windows10可以上网的电脑os这不废话嘛">·一台安装了Windows10，可以上网的电脑（OS：这不废话嘛。）</h3>
+<h4 id="注理论上所有安装了windows系统的电脑都适用于这个教程-但是我推荐使用windows10-因为windows10是windows系统的最新一代比较安全">（注：理论上，所有安装了Windows系统的电脑都适用于这个教程。但是，我推荐使用Windows10。因为Windows10是Windows系统的最新一代，比较安全。）</h4>
+<h3 id="物理宿主机系统windows-10-20h2-19042685">·物理宿主机系统：Windows 10 20H2 19042.685</h3>
+<h3 id="java开发包此教程使用的是8u281版本">·Java开发包：此教程使用的是8u281版本</h3>
+<h4 id="注截至我编辑这一篇博客时java-15已经发布了-但是我推荐使用java-8因为就我而言java-8相对来说比较稳定-8u281是java-8的最新一个版本">（注：截至我编辑这一篇博客时，Java 15已经发布了。但是，我推荐使用Java 8.因为就我而言，Java 8相对来说比较稳定。8u281是Java 8的最新一个版本。）</h4>
+<h3 id="集成开发环境ideintellij-idea-202031">·集成开发环境IDE：IntelliJ IDEA 2020.3.1</h3>
+<h4 id="注就我而言我习惯用intellij-idea来进行java程序开发-从百度百科得知除了这个集成开发环境ide以外还有eclipsenetbeansmyeclipseeditplus">（注：就我而言，我习惯用IntelliJ IDEA来进行Java程序开发。从百度百科得知，除了这个集成开发环境IDE以外，还有Eclipse，NetBeans，MyEclipse，EditPlus。）</h4>
+<h3 id="模组依赖接口forge-1165-3601-mdk格式">·模组依赖接口：Forge 1.16.5 - 36.0.1 Mdk格式</h3>
+<h4 id="注我的世界模组需要模组依赖接口才能加载运行-除了这个模组依赖接口以外还有fabric和liteloader-我习惯用forge来加载运行我的世界模组">（注：我的世界模组需要模组依赖接口才能加载运行。除了这个模组依赖接口以外，还有Fabric和LiteLoader。我习惯用Forge来加载运行我的世界模组。）</h4>
+<h4 id="解析1165是我的世界minecraft版本号3601是forge版本号">（解析：1.16.5是我的世界Minecraft版本号，36.0.1是Forge版本号。）</h4>
+<h4 id="注此教程均适用于我的世界任何一个版本号例如1122115等等仅限于java版本-forge版本推荐使用recommended那一栏的版本">（注：此教程均适用于我的世界任何一个版本号，例如1.12.2，1.15等等，仅限于Java版本。Forge版本推荐使用Recommended那一栏的版本。）</h4>
+<h2 id="21软件相关下载网址请按照你的实际情况和需要来下载">2.1软件相关下载网址（请按照你的实际情况和需要来下载）</h2>
+<h3 id="注由于网络等相关原因请有耐心地等待软件下载完成">（注：由于网络等相关原因，请有耐心地等待软件下载完成）</h3>
+<h3 id="java开发包httpswwworaclecomcnjavatechnologiesjavasejavase-jdk8-downloadshtml">Java开发包：https://www.oracle.com/cn/java/technologies/javase/javase-jdk8-downloads.html</h3>
+<h3 id="集成开发环境idehttpswwwjetbrainscomzh-cnideadownloadsectionwindows">集成开发环境IDE：https://www.jetbrains.com/zh-cn/idea/download/#section=windows</h3>
+<h3 id="模组依赖接口httpfilesminecraftforgenetmavennetminecraftforgeforgeindex_1165html">模组依赖接口：http://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.16.5.html#</h3>
+<h2 id="22检查有没有安装了java开发包">2.2检查有没有安装了Java开发包</h2>
+<h3 id="221按下winr快捷键打开运行输入cmd按下enter键打开cmd输入以下命令按下enter键若出现图2这种情况即代表已经安装了java开发包则无需进行31~33的步骤">2.2.1按下Win+R快捷键，打开运行，输入cmd，按下Enter键，打开cmd，输入以下命令，按下Enter键，若出现图2这种情况，即代表已经安装了Java开发包，则无需进行3.1~3.3的步骤</h3>
+<pre><code>java -version
+</code></pre>
+<p><img src="https://zenjich.github.io/post-images/1611592008801.png" alt="" loading="lazy"><br>
+<img src="https://zenjich.github.io/post-images/1611592016562.png" alt="" loading="lazy"></p>
+<h2 id="3下载并安装java开发包">3.下载并安装Java开发包</h2>
+<h3 id="31左键单击图中最后一栏的jdk-8u281-windows-x64exe容量为16697-mb如图2所示打勾左键单击绿色那一栏的download-jdk-8u281-windows-x64exe百度一下oracle账户和密码输入用户名和密码左键单击登录开始下载java开发包">3.1左键单击图中最后一栏的jdk-8u281-windows-x64.exe（容量为166.97 MB），如图2所示，打勾，左键单击绿色那一栏的Download jdk-8u281-windows-x64.exe，百度一下Oracle账户和密码，输入用户名和密码，左键单击登录，开始下载Java开发包</h3>
+<p><img src="https://zenjich.github.io/post-images/1611592053256.png" alt="" loading="lazy"><br>
+<img src="https://zenjich.github.io/post-images/1611592060273.png" alt="" loading="lazy"><br>
+<img src="https://zenjich.github.io/post-images/1611592067755.png" alt="" loading="lazy"></p>
+<h3 id="32找到并左键双击你刚才下载的java开发包的安装包开始安装java开发包">3.2找到并左键双击你刚才下载的Java开发包的安装包，开始安装Java开发包</h3>
+<p><img src="https://zenjich.github.io/post-images/1611592109464.png" alt="" loading="lazy"><br>
+<img src="https://zenjich.github.io/post-images/1611592117215.png" alt="" loading="lazy"><br>
+<img src="https://zenjich.github.io/post-images/1611592126336.png" alt="" loading="lazy"><br>
+<img src="https://zenjich.github.io/post-images/1611592132451.png" alt="" loading="lazy"><br>
+<img src="https://zenjich.github.io/post-images/1611592137392.png" alt="" loading="lazy"></p>
+<h3 id="33按下winr快捷键打开运行输入cmd按下enter键打开cmd输入以下命令按下enter键若出现图2这种情况即代表java开发包安装成功">3.3按下Win+R快捷键，打开运行，输入cmd，按下Enter键，打开cmd，输入以下命令，按下Enter键，若出现图2这种情况，即代表Java开发包安装成功</h3>
+<pre><code>java -version
+</code></pre>
+<p><img src="https://zenjich.github.io/post-images/1611592167047.png" alt="" loading="lazy"><br>
+<img src="https://zenjich.github.io/post-images/1611592172994.png" alt="" loading="lazy"></p>
+<h2 id="4下载并安装intellij-idea">4.下载并安装IntelliJ IDEA</h2>
+<h3 id="41左键单击黑色那一栏的下载开始下载intellij-idea">4.1左键单击黑色那一栏的下载，开始下载IntelliJ IDEA</h3>
+<figure data-type="image" tabindex="1"><img src="https://zenjich.github.io/post-images/1611592185820.png" alt="" loading="lazy"></figure>
+<h3 id="42找到并左键双击你刚才下载的intellij-idea的安装包开始安装intellij-idea">4.2找到并左键双击你刚才下载的IntelliJ IDEA的安装包，开始安装IntelliJ IDEA</h3>
+<p><img src="https://zenjich.github.io/post-images/1611592206374.png" alt="" loading="lazy"><br>
+<img src="https://zenjich.github.io/post-images/1611592217271.png" alt="" loading="lazy"><br>
+<img src="https://zenjich.github.io/post-images/1611592221240.png" alt="" loading="lazy"><br>
+<img src="https://zenjich.github.io/post-images/1611592245987.png" alt="" loading="lazy"><br>
+<img src="https://zenjich.github.io/post-images/1611592254474.png" alt="" loading="lazy"><br>
+<img src="https://zenjich.github.io/post-images/1611592263941.png" alt="" loading="lazy"></p>
+<h3 id="43保存好你的数据和资料重启电脑至此intellij-idea安装成功">4.3保存好你的数据和资料，重启电脑，至此，IntelliJ IDEA安装成功。</h3>
+<figure data-type="image" tabindex="2"><img src="https://zenjich.github.io/post-images/1611592282751.png" alt="" loading="lazy"></figure>
+<h2 id="5下载并解压模组依赖接口配置我的世界模组开发环境">5.下载并解压模组依赖接口，配置我的世界模组开发环境</h2>
+<h3 id="51右键单击mdk那一栏选择复制链接然后新打开一个标签页在浏览器顶部地址栏将其粘贴上去如框1修改成框2这样按下enter键下载mdk格式的模组依赖接口">5.1右键单击Mdk那一栏，选择复制链接，然后，新打开一个标签页，在浏览器顶部地址栏，将其粘贴上去，如框1，修改成框2这样，按下Enter键，下载Mdk格式的模组依赖接口</h3>
+<h4 id="注如果有recommended那一块就下载这一块的mdk格式的模组依赖接口">（注：如果有Recommended那一块，就下载这一块的Mdk格式的模组依赖接口）</h4>
+<pre><code>https://adfoc.us/serve/sitelinks/?id=271228&amp;url=https://files.minecraftforge.net/maven/net/minecraftforge/forge/1.16.5-36.0.1/forge-1.16.5-36.0.1-mdk.zip
+</code></pre>
+<pre><code>https://files.minecraftforge.net/maven/net/minecraftforge/forge/1.16.5-36.0.1/forge-1.16.5-36.0.1-mdk.zip
+</code></pre>
+<p><img src="https://zenjich.github.io/post-images/1611592304946.png" alt="" loading="lazy"><br>
+<img src="https://zenjich.github.io/post-images/1611592311346.png" alt="" loading="lazy"></p>
+<h3 id="52找到并解压缩你刚才下载的mdk格式的模组依赖接口并将解压出来的所有文件全部复制粘贴到你的我的世界模组项目文件夹">5.2找到并解压缩你刚才下载的Mdk格式的模组依赖接口，并将解压出来的所有文件全部复制粘贴到你的我的世界模组项目文件夹</h3>
+<h4 id="图中操作解释左键单击你所下载的模组依赖接口压缩包然后左键单击顶部的粉红色的提取然后左键单击全部解压缩之后左键单击蓝色边框的提取解压缩你所下载的模组依赖接口压缩包到以压缩包名称命名的文件夹最后打开你的我的世界模组项目文件夹将解压出来的所有文件全部复制粘贴到你的我的世界模组项目文件夹">（图中操作解释：左键单击你所下载的模组依赖接口压缩包，然后，左键单击顶部的粉红色的“提取”，然后，左键单击“全部解压缩”，之后，左键单击蓝色边框的“提取”，解压缩你所下载的模组依赖接口压缩包到以压缩包名称命名的文件夹，最后，打开你的我的世界模组项目文件夹，将解压出来的所有文件全部复制粘贴到你的我的世界模组项目文件夹）</h4>
+<p><img src="https://zenjich.github.io/post-images/1611592335266.png" alt="" loading="lazy"><br>
+<img src="https://zenjich.github.io/post-images/1611592341664.png" alt="" loading="lazy"><br>
+<img src="https://zenjich.github.io/post-images/1611592360043.png" alt="" loading="lazy"><br>
+<img src="https://zenjich.github.io/post-images/1611592373158.png" alt="" loading="lazy"><br>
+<img src="https://zenjich.github.io/post-images/1611592404286.png" alt="" loading="lazy"><br>
+<img src="https://zenjich.github.io/post-images/1611592411853.png" alt="" loading="lazy"></p>
+<h3 id="53左键双击启动intellij-idea打勾左键单击continue然后左边单击send-anonymous-statistics就这样成功地启动了intellij-idea">5.3左键双击启动IntelliJ IDEA，打勾，左键单击Continue，然后，左边单击Send Anonymous Statistics，就这样，成功地启动了IntelliJ IDEA</h3>
+<p><img src="https://zenjich.github.io/post-images/1611592435356.png" alt="" loading="lazy"><br>
+<img src="https://zenjich.github.io/post-images/1611592446091.png" alt="" loading="lazy"><br>
+<img src="https://zenjich.github.io/post-images/1611592452856.png" alt="" loading="lazy"></p>
+<h3 id="54打开你的我的世界模组项目文件夹找到并左键双击buildgradle文件选择用记事本打开如图2">5.4打开你的我的世界模组项目文件夹，找到并左键双击build.gradle文件，选择用记事本打开，如图2。</h3>
+<h4 id="注图3为原版顶部的内容节选将图3修改成图4那样左键单击左上角的文件然后左键单击保存">（注：图3为原版顶部的内容（节选），将图3修改成图4那样，左键单击左上角的“文件”，然后，左键单击“保存”）</h4>
+<p><img src="https://zenjich.github.io/post-images/1611592469367.png" alt="" loading="lazy"><br>
+<img src="https://zenjich.github.io/post-images/1611592477862.png" alt="" loading="lazy"><br>
+<img src="https://zenjich.github.io/post-images/1611592486428.png" alt="" loading="lazy"><br>
+<img src="https://zenjich.github.io/post-images/1611592504614.png" alt="" loading="lazy"><br>
+<img src="https://zenjich.github.io/post-images/1611592516002.png" alt="" loading="lazy"></p>
+<h3 id="55打开你的我的世界模组项目文件夹接着打开gradle文件夹再打开wrapper文件夹找到并左键双击gradle-wrapperproperties文件选择用记事本打开将-servicesgradleorgdistributions替换为-lss233littleservicecnrepositoriesgradle-dist最后左键单击左上角的文件然后左键单击保存">5.5打开你的我的世界模组项目文件夹，接着打开gradle文件夹，再打开wrapper文件夹，找到并左键双击gradle-wrapper.properties文件，选择用记事本打开，将 services.gradle.org/distributions替换为 lss233.littleservice.cn/repositories/gradle-dist，最后，左键单击左上角的“文件”，然后，左键单击“保存”</h3>
+<p><img src="https://zenjich.github.io/post-images/1611592537301.png" alt="" loading="lazy"><br>
+<img src="https://zenjich.github.io/post-images/1611592543968.png" alt="" loading="lazy"><br>
+<img src="https://zenjich.github.io/post-images/1611592549694.png" alt="" loading="lazy"><br>
+<img src="https://zenjich.github.io/post-images/1611592560054.png" alt="" loading="lazy"><br>
+<img src="https://zenjich.github.io/post-images/1611592568074.png" alt="" loading="lazy"></p>
+<h3 id="56左键双击启动intellij-idea然后左键单击图中open上面的那一个图标找到你的我的世界模组项目文件夹左键双击buildgradle文件然后左键单击open-as-project然后请耐心等待相关配置文件下载完成并完成相关配置最后历时35分钟48秒456毫秒完成相关配置">5.6左键双击启动IntelliJ IDEA，然后，左键单击图中Open上面的那一个图标，找到你的我的世界模组项目文件夹，左键双击build.gradle文件，然后，左键单击Open as Project，然后，请耐心等待相关配置文件下载完成并完成相关配置，最后，历时35分钟48秒456毫秒，完成相关配置</h3>
+<p><img src="https://zenjich.github.io/post-images/1611592589023.png" alt="" loading="lazy"><br>
+<img src="https://zenjich.github.io/post-images/1611592595887.png" alt="" loading="lazy"><br>
+<img src="https://zenjich.github.io/post-images/1611592610130.png" alt="" loading="lazy"><br>
+<img src="https://zenjich.github.io/post-images/1611592625209.png" alt="" loading="lazy"><br>
+<img src="https://zenjich.github.io/post-images/1611592633647.png" alt="" loading="lazy"></p>
+<h3 id="57左键单击intellij-idea右上角gradle打开gradle侧板依次打开你的我的世界模组项目文件夹名称tasksfg_runs这些文件夹左键双击运行genintellijruns请耐心等待genintellijruns运行完成最后如图2所示历时1分钟27秒99毫秒genintellijruns运行完成">5.7左键单击IntelliJ IDEA右上角Gradle，打开Gradle侧板，依次打开你的我的世界模组项目文件夹名称，Tasks，fg_runs这些文件夹，左键双击运行genIntellijRuns，请耐心等待genIntellijRuns运行完成，最后，如图2所示，历时1分钟27秒99毫秒，genIntellijRuns运行完成。</h3>
+<p><img src="https://zenjich.github.io/post-images/1611592647283.png" alt="" loading="lazy"><br>
+<img src="https://zenjich.github.io/post-images/1611592653503.png" alt="" loading="lazy"></p>
+<h3 id="58左键单击intellij-idea右上角的test-genintellijruns方框选择并左键单击runclient然后左键单击隔壁的绿色的播放按钮运行启动我的世界最后我的世界成功运行启动">5.8左键单击IntelliJ IDEA右上角的Test [genIntellijRuns]方框，选择并左键单击runClient，然后，左键单击隔壁的绿色的播放按钮，运行启动我的世界，最后，我的世界成功运行启动</h3>
+<p><img src="https://zenjich.github.io/post-images/1611592674819.png" alt="" loading="lazy"><br>
+<img src="https://zenjich.github.io/post-images/1611592682312.png" alt="" loading="lazy"></p>
+<h2 id="总结summary">总结Summary</h2>
+<h3 id="至此我的世界模组开发环境配置成功">至此，我的世界模组开发环境配置成功。</h3>
+<h2 id="庆贺吧">庆贺吧！</h2>
+<figure data-type="image" tabindex="3"><img src="https://zenjich.github.io/post-images/1611592693274.jpg" alt="" loading="lazy"></figure>
+<h2 id="补充说明">补充说明</h2>
+<h3 id="0修改ide的语言为中文">0.修改IDE的语言为中文</h3>
+<h4 id="01左键单击ide左上角的file选择并左键单击settings依次左键单击editorplugins然后在输入框里输入chinese选择并左键单击第二个的绿色的install安装中文语言插件安装完成之后左键单击第二个的绿色的restart-ide最后左键单击蓝色那一个restart重启ide">0.1左键单击IDE左上角的“File”，选择并左键单击“Settings”，依次左键单击Editor，Plugins，然后，在输入框里输入Chinese，选择并左键单击第二个的绿色的“Install”，安装中文语言插件，安装完成之后，左键单击第二个的绿色的“Restart IDE”，最后，左键单击蓝色那一个“Restart”，重启IDE</h4>
+<p><img src="https://zenjich.github.io/post-images/1611592714503.png" alt="" loading="lazy"><br>
+<img src="https://zenjich.github.io/post-images/1611592720794.png" alt="" loading="lazy"><br>
+<img src="https://zenjich.github.io/post-images/1611592726733.png" alt="" loading="lazy"><br>
+<img src="https://zenjich.github.io/post-images/1611592734402.png" alt="" loading="lazy"><br>
+<img src="https://zenjich.github.io/post-images/1611592770007.png" alt="" loading="lazy"></p>
+<h3 id="1解释我的世界模组项目的基本结构">1.解释我的世界模组项目的基本结构</h3>
+<h4 id="注ide左边打开的那些文件夹就是我的世界模组项目的基本结构">（注：IDE左边打开的那些文件夹就是我的世界模组项目的基本结构）</h4>
+<figure data-type="image" tabindex="4"><img src="https://zenjich.github.io/post-images/1611592779843.png" alt="" loading="lazy"></figure>
+<h4 id="注顺序从上到下">（注：顺序：从上到下）</h4>
+<h4 id="0src文件夹下的main文件夹下的java文件夹是存放我的世界模组项目源代码的文件夹">0.src文件夹下的main文件夹下的java文件夹是存放我的世界模组项目源代码的文件夹</h4>
+<h4 id="1java文件夹下的examplemod文件是样例模组源代码文件">1.java文件夹下的ExampleMod文件是样例模组源代码文件</h4>
+<h4 id="2src文件夹下的main文件夹下的resources文件夹是存放我的世界模组项目贴图和语言的文件夹">2.src文件夹下的main文件夹下的resources文件夹是存放我的世界模组项目贴图和语言的文件夹</h4>
+<h4 id="3resources文件夹下的meta-inf文件夹下的modstoml文件是我的世界模组项目的注释">3.resources文件夹下的META-INF文件夹下的mods.toml文件是我的世界模组项目的注释</h4>
+<h2 id="0关于作者">0.关于作者</h2>
+<h3 id="作者zenjich">作者：ZenJiCh</h3>
+<h2 id="1鸣谢">1.鸣谢</h2>
+<h3 id="该教程的参考内容如下">该教程的参考内容如下：</h3>
+<h3 id="54~55参考了httpsv2mcdevcomposts589html">5.4~5.5参考了：https://v2mcdev.com/posts/589.html</h3>
+<h3 id="56~58参考了httpswwwbilibilicomvideobv1qe41137p9spm_id_from333788recommend_more_video2">5.6~5.8参考了：https://www.bilibili.com/video/BV1QE41137P9/?spm_id_from=333.788.recommend_more_video.2</h3>
+<h2 id="2版权信息">2.版权信息</h2>
+<h3 id="本博客所有文章除特别声明外均采用-by-nc-sa-许可协议-转载请注明出处">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">BY-NC-SA</a> 许可协议。转载请注明出处！</h3>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://zenjich.github.io/post/xian-shi-yu-huan-xiang-mo-zu-kai-fa-ri-ji-chi-xu-geng-xin/" class="post-title gt-a-link">
+                    现实与幻想模组开发日记（持续更新）
+                </a>
+            </div>
+        
+
+        
+            <span id="/post/" class="leancloud_visitors" data-flag-title="我的世界模组开发环境配置（Windows&amp;Forge）">
+                <em class="post-meta-item-text">阅读量 </em>
+                <i class="leancloud-visitors-count">0</i>
+            </span>
+        
+
+        
+
+        
+            <script src='https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
+
+<style>
+	div#vcomments{
+		width:100%;
+		max-width: 1000px;
+		padding: 2.5%
+	}
+</style>
+
+
+	<div id="vcomments"></div>
+
+<script>
+	new Valine({
+		el: '#vcomments',
+		appId: '',
+		appKey: '',
+		avatar: '',
+		pageSize: 5,
+		recordIp: true,
+		placeholder: 'Just Go Go',
+		visitor: true,
+	});
+</script>
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first"></div>
+    <div class="social-container">
+        
+            
+                <a href="https://github.com/ZenJiCh" target="_blank">
+                    <i class="fab fa-github gt-c-content-color-first"></i>
+                </a>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://zenjich.github.io/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+    </div>
+</div>
+</body>
+</html>
